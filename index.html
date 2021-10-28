@@ -3,6 +3,17 @@
 
 <head>
     <title>zadanko</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -10,11 +21,23 @@
         <h1>Witaj!</h1>
     </header>
     <main>
-        <input type="tekst" placeholder="wpisz tu cos">
-        <input type="button" value="zatwierdz">
-
-
+        <input type="text" placeholder="wpisz tu cos">
+        <input type="button" value="submit">
+        <br>
     </main>
+    <script>
+        let a = document.querySelector("input [type='text']");
+        let z = document.querySelector("input [type='button']");
+        let b = document.querySelector("h1");
+
+
+        z.addEventListener("click", function ())
+        {
+            b.innerText = "Witaj!" + a.value;
+        }
+
+
+    </script>
 </body>
 
 </html>
